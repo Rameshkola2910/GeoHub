@@ -1,0 +1,10 @@
+2023-11-30 11:08:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table city(\000d\000acityId INT PRIMARY KEY AUTO_INCREMENT,\000d\000apopulation INT,\000d\000alatitude VARCHAR(255),\000d\000alongitude VARCHAR(255)[*]"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table city(
+cityId INT PRIMARY KEY AUTO_INCREMENT,
+population INT,
+latitude VARCHAR(255),
+longitude VARCHAR(255) [42001-214]
+2023-11-30 11:08:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-214]
